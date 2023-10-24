@@ -1,0 +1,61 @@
+.banner {
+    position: absolute;
+    z-index: -100;
+}
+
+.boca {
+    right: 350px;
+    top: 100px;
+    height: 450px;
+}
+
+.licha {
+    right: 100px;
+    top: 180px;
+    height: 300px;
+}
+
+.content-main {
+    padding: 45px;
+    font-family: 'Bebas Neue';
+    height: 100vh;
+}
+
+.title {
+    font-size: 65px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.subtitle {
+    font-family: Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.7px;
+}
+
+.shop-now-wrapper {
+    font-family: 'Bebas';
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.shop-now {
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out 0.1s;
+}
+
+.shop-now:hover {
+    transform: scale(1.05);
+}
