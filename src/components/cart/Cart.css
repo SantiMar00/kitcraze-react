@@ -1,0 +1,5 @@
+.cart-drawer {
+    position: absolute;
+    z-index: 100;
+    overflow: visible;
+}

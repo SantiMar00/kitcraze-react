@@ -87,6 +87,138 @@
             "type": "Home",
             "price": 50,
             "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284692/Kits/b8zkaldusgb4zadvogro.png"
+        },
+        {
+            "id": 9,
+            "title": "Arsenal 2023-2024",
+            "team": "Arsenal",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698332675/Kits/izwbvedjlcs85hyobxrn.png"
+        },
+        {
+            "id": 10,
+            "title": "Arsenal 2003-2004",
+            "team": "Arsenal",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2003-2004",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698332674/Kits/n3dihuot5yj1epzvwh8l.png"
+        },
+        {
+            "id": 11,
+            "title": "Chelsea 2023-2024",
+            "team": "Chelsea",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698333636/Kits/rtgcxps3owcuf3ivy4th.png"
+        },
+        {
+            "id": 12,
+            "title": "Chelsea 2011-2012",
+            "team": "Chelsea",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2011-2012",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698333657/Kits/lywe2ekjueeaf6zuyhms.png"
+        },
+        {
+            "id": 13,
+            "title": "Liverpool 2023-2024",
+            "team": "Liverpool",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698334079/Kits/zpwux41sltetzjhygr6v.png"
+        },
+        {
+            "id": 14,
+            "title": "Manchester City 2023-2024",
+            "team": "Manchester City",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698334318/Kits/x3jxoky4a15lgreelu8r.png"
+        },
+        {
+            "id": 15,
+            "title": "Manchester City 2022-2023",
+            "team": "Manchester City",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2022-2023",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698334317/Kits/gtuuph2zd4gzbea0tqgs.png"
+        },
+        {
+            "id": 16,
+            "title": "Manchester City 1998-1999",
+            "team": "Manchester City",
+            "country": "England",
+            "league": "Premier League",
+            "season": "1998-1999",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698334315/Kits/d8sprvj3hjx0mggiedzo.png"
+        },
+        {
+            "id": 17,
+            "title": "Manchester United 2023-2024",
+            "team": "Manchester United",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698342716/Kits/gns0egtvfkmundfkqwhg.png"
+        },
+        {
+            "id": 18,
+            "title": "Manchester United 2007-2008",
+            "team": "Manchester United",
+            "country": "England",
+            "league": "Premier League",
+            "season": "2007-2008",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698342716/Kits/kczpigaa9duq3f3hlwyu.png"
+        },
+        {
+            "id": 19,
+            "title": "Manchester United 1998-1999",
+            "team": "Manchester United",
+            "country": "England",
+            "league": "Premier League",
+            "season": "1998-1999",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698342717/Kits/s4yjrot2alilqotq8zf8.png"
+        },
+        {
+            "id": 0,
+            "title": "",
+            "team": "",
+            "country": "",
+            "league": "",
+            "season": "",
+            "type": "",
+            "price": 80,
+            "imgURL": ""
         }
     ]
 }

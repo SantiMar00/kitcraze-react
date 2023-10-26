@@ -19,6 +19,7 @@
 .team-season-wrapper {
     display: flex;
     gap: 5px;
+    overflow: hidden;
 }
 
 .card-price {

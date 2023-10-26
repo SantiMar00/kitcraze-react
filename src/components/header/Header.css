@@ -37,3 +37,13 @@
     text-underline-offset: 10px;
     text-decoration-thickness: 2px;
 }
+
+.cart-wrapper {
+    position: absolute;
+    background-color: #fff;
+    margin: 15px 0;
+    width: 500px;
+    right: 0;
+    border: 1px red solid;
+    transition: ease-in-out 0.2s;
+}
