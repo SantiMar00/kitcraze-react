@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+import KitCard from '../../components/kitCard/KitCard'
 import './Landing.css'
 import Boca from '../../assets/boca.png'
 import Licha from '../../assets/licha.png'
 
 function Landing() {
+    const [kits, setKits] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:4200/kits')
+            .then((res) => res.json())
+            .then((data) => {
+                setKits(data)
+            })
+    }, [])
+
+    const popular = kits.map((kit) => <KitCard key={kit.id} kit={kit} />)
+
+    const newlyAdded = kits
+        .slice(-10)
+        .reverse()
+        .map((kit) => <KitCard key={kit.id} kit={kit} />)
+
     return (
         <div>
             <Header />
@@ -32,13 +51,17 @@ function Landing() {
                     </div>
                 </div>
             </div>
-            <div>
-                <h1>POPULAR</h1>
+            <div class="section">
+                <h1 class="section section-title">POPULAR</h1>
+                <div class="kit-cards">{popular}</div>
             </div>
-            <div>
-                <h1>CLEARANCE</h1>
+
+            <div class="section">
+                <h1 class="section section-title">NEWLY ADDED</h1>
+                <div class="kit-cards">{newlyAdded}</div>
             </div>
-            {/* <Footer /> */}
+
+            <Footer />
         </div>
     )
 }

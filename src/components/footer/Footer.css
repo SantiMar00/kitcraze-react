@@ -1,0 +1,16 @@
+.footer {
+    background-color: rgb(12, 112, 12);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.copyright {
+    color: #fff;
+    font-family: 'Bebas';
+    font-size: 14px;
+    word-spacing: 3px;
+}

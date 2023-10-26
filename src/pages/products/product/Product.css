@@ -1,0 +1,9 @@
+.product-main {
+    display: flex;
+    margin: 20px;
+    padding: 25px;
+}
+
+.product-img {
+    width: 500px;
+}

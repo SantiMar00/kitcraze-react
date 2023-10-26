@@ -17,8 +17,9 @@
 
 .content-main {
     padding: 45px;
+    padding-bottom: 0;
     font-family: 'Bebas Neue';
-    height: 100vh;
+    height: 85vh;
 }
 
 .title {
@@ -53,9 +54,55 @@
 .shop-now {
     text-decoration: none;
     color: #000;
+    word-spacing: 3px;
     transition: ease-in-out 0.1s;
 }
 
 .shop-now:hover {
     transform: scale(1.05);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.section-title {
+    padding: 20px;
+}
+
+.kit-cards {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    overflow-x: scroll;
+}
+
+.kit-cards::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: gray;
+    scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #000;
+    border-radius: 10px;
 }

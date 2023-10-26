@@ -1,0 +1,92 @@
+{
+    "kits": [
+        {
+            "id": 1,
+            "title": "Boca 2000",
+            "team": "Boca Juniors",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "1999-2000",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284052/Kits/ge7h7yrptxtqivxrcvsm.png"
+        },
+        {
+            "id": 2,
+            "title": "Boca 23-24",
+            "team": "Boca Juniors",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284049/Kits/eyzdwawqltqxduw6rtlw.png"
+        },
+        {
+            "id": 3,
+            "title": "Boca 1981",
+            "team": "Boca Juniors",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "1981",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284049/Kits/m16xcivgwlqqiirpejc4.png"
+        },
+        {
+            "id": 4,
+            "title": "Boca 98-99",
+            "team": "Boca Juniors",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "1998-1999",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284049/Kits/ghi5wexz65ysz8wcnid0.png"
+        },
+        {
+            "id": 5,
+            "title": "Boca 23-24 Away",
+            "team": "Boca Juniors",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "2023-2024",
+            "type": "Away",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284049/Kits/csp0mxqledwyvrntfjot.png"
+        },
+        {
+            "id": 6,
+            "title": "River 1996",
+            "team": "River Plate",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "1996-1997",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284691/Kits/bez4xgc5jgohohhscchv.png"
+        },
+        {
+            "id": 7,
+            "title": "River 2023-2024",
+            "team": "River Plate",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "2023-2024",
+            "type": "Home",
+            "price": 80,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284690/Kits/r0qcblwcqgpw089siqta.png"
+        },
+        {
+            "id": 8,
+            "title": "River 2011",
+            "team": "River Plate",
+            "country": "Argentina",
+            "league": "Primera División Argentina",
+            "season": "2010-2011",
+            "type": "Home",
+            "price": 50,
+            "imgURL": "https://res.cloudinary.com/santimar00/image/upload/v1698284692/Kits/b8zkaldusgb4zadvogro.png"
+        }
+    ]
+}
