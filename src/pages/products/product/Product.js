@@ -11,7 +11,7 @@ function Product() {
 
     const [kit, setKit] = useState()
     const [size, setSize] = useState('')
-    const [qty, setQty] = useState('1')
+    const [qty, setQty] = useState(1)
 
     useEffect(() => {
         fetch(`http://localhost:4200/kits/${id}`)
@@ -88,12 +88,12 @@ function Product() {
                                 type="text"
                                 value={qty}
                                 onChange={(e) => {
-                                    setQty(e.target.value)
+                                    setQty(parseInt(e.target.value))
                                 }}
                             />
                             <button
                                 class="add-to-cart-btn"
-                                onClick={() => addToCart(kit, qty)}
+                                onClick={() => addToCart(kit, size, qty)}
                             >
                                 ADD TO CART
                             </button>

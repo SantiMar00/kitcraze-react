@@ -9,21 +9,36 @@ export const CartProvider = ({ children }) => {
             : []
     )
 
-    const addToCart = (item, qty) => {
-        const isItemInCart = cartItems.find(
-            (cartItem) => cartItem.id === item.id
-        )
+    const addToCart = (item, size, qty) => {
+        if (qty || size) {
+            item = { ...item, id: item.id + size }
+        }
 
-        if (isItemInCart) {
+        if (!qty) {
+            qty = 1
+        }
+
+        if (!size) {
+            size = item.size
+        }
+
+        console.log(item)
+
+        if (
+            cartItems.findIndex(
+                (cartItem) => cartItem.id === item.id && cartItem.size === size
+            ) !== -1
+        ) {
             setCartItems(
                 cartItems.map((cartItem) =>
-                    cartItem.id === item.id
-                        ? { ...cartItem, quantity: cartItem.quantity + 1 }
+                    cartItem.id === item.id && cartItem.size === size
+                        ? { ...cartItem, quantity: cartItem.quantity + qty }
                         : cartItem
                 )
             )
         } else {
-            setCartItems([...cartItems, { ...item, quantity: qty }])
+            // no existe el mismo producto con el mismo talle en el carrito
+            setCartItems([...cartItems, { ...item, size: size, quantity: qty }])
         }
     }
 
