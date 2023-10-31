@@ -81,7 +81,7 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            style={{ cursor: 'pointer' }}
+                            className="header-cart"
                             onClick={() => {
                                 setIsMounted(!isMounted)
                                 if (!isCartShown) setIsCartShown(true)

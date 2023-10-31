@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { CartContext } from '../../../context/CartProvider'
 import Header from '../../../components/header/Header'
 import './Product.css'
+import Footer from '../../../components/footer/Footer'
 
 function Product() {
     const { id } = useParams(null)
@@ -100,6 +101,7 @@ function Product() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     } else {

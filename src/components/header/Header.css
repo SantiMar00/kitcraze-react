@@ -48,15 +48,21 @@
         text-decoration-thickness: 2px;
     }
 
+    .header-cart {
+        cursor: pointer;
+    }
+
     .cart-wrapper {
         position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #fff;
         margin: 15px 0;
-        width: 300px;
+        width: 400px;
         height: 100vh;
         top: -15px;
         right: 0;
-        border: 1px red solid;
         transition: ease-in-out 0.2s;
         z-index: 3;
     }
