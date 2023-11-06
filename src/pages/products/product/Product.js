@@ -6,16 +6,16 @@ import './Product.css'
 import Footer from '../../../components/footer/Footer'
 
 function Product() {
-    const { id } = useParams(null)
+    const { product, id } = useParams()
 
-    const { cartItems, addToCart } = useContext(CartContext)
+    const { addToCart } = useContext(CartContext)
 
     const [kit, setKit] = useState()
     const [size, setSize] = useState('')
     const [qty, setQty] = useState(1)
 
     useEffect(() => {
-        fetch(`http://localhost:4200/kits/${id}`)
+        fetch(`https://kitcraze-api.onrender.com/kits/${id}`)
             .then((res) => res.json())
             .then((kit) => setKit(kit))
     }, [id])
@@ -29,11 +29,9 @@ function Product() {
                         <img class="product-img" src={kit.imgURL} />
                     </div>
                     <div class="product-info-wrapper">
-                        <div class="product-title">
-                            <p>{kit.season}</p>
-                            <p>{kit.team}</p>
-                            <p>{kit.type}</p>
-                        </div>
+                        <h1 class="product-title">
+                            {kit.season} {kit.team} {kit.type}
+                        </h1>
                         <div class="product-price">€{kit.price}</div>
                         <div class="product-size">
                             <p>{`Size: ${size}`}</p>

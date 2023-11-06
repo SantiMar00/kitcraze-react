@@ -11,7 +11,7 @@
     .product-main {
         display: flex;
         gap: 100px;
-        margin: 20px;
+        margin: 20px 0px 100px 0;
         padding: 25px;
     }
 
@@ -27,8 +27,10 @@
 
     .product-title {
         display: flex;
-        gap: 8px;
-        font-size: 28px;
+        gap: 5px;
+        font-size: 1.8rem;
+        word-spacing: 3px;
+        font-weight: 400;
     }
 
     .product-price {

@@ -13,11 +13,13 @@ function Cart() {
             <div className="flex-cart">
                 {cartItems.map((item) => (
                     <div className="item-wrapper" key={item.id}>
-                        <img
-                            style={{ width: '100px' }}
-                            src={item.imgURL}
-                            alt={item.title}
-                        />
+                        <a href={`/products/${item.productId}`}>
+                            <img
+                                style={{ width: '100px' }}
+                                src={item.imgURL}
+                                alt={item.title}
+                            />
+                        </a>
                         <div className="product-info-wrapper">
                             <p className="item-title product-info">
                                 {item.season} {item.team} {item.type}

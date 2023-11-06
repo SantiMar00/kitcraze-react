@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
 
     const addToCart = (item, size, qty) => {
         if (qty || size) {
-            item = { ...item, id: item.id + size }
+            item = { ...item, id: item.id + size, productId: item.id }
         }
 
         if (!qty) {
@@ -73,6 +73,10 @@ export const CartProvider = ({ children }) => {
         )
     }
 
+    const getCartQty = () => {
+        return cartItems.reduce((cartQty, item) => cartQty + item.quantity, 0)
+    }
+
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems))
     }, [cartItems])
@@ -92,6 +96,7 @@ export const CartProvider = ({ children }) => {
                 removeFromCart,
                 clearCart,
                 getCartTotal,
+                getCartQty,
             }}
         >
             {children}

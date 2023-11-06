@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react'
+import { CartContext } from '../../context/CartProvider'
 import './Header.css'
 import Logo from '../../assets/logo.png'
 import Cart from '../cart/Cart'
 
 function Header() {
+    const { getCartQty } = useContext(CartContext)
+
     const [isCartShown, setIsCartShown] = useState(false)
     const [isMounted, setIsMounted] = useState(false)
 
@@ -83,10 +86,18 @@ function Header() {
                         <a
                             className="header-cart"
                             onClick={() => {
-                                setIsMounted(!isMounted)
-                                if (!isCartShown) setIsCartShown(true)
+                                if (getCartQty() !== 0) {
+                                    setIsMounted(!isMounted)
+                                    if (!isCartShown) {
+                                        setIsCartShown(true)
+                                    }
+                                }
                             }}
                         >
+                            {getCartQty() !== 0 && (
+                                <div className="cart-qty">{getCartQty()}</div>
+                            )}
+
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="1em"
