@@ -48,7 +48,8 @@
         list-style: none;
     }
 
-    .sizes-list > a {
+    .size-btn {
+        cursor: pointer;
         border: 1px solid #cdcdcd;
         padding: 5px;
         color: #7e7e7e;
@@ -59,8 +60,9 @@
         line-height: 20px;
     }
 
-    .sizes-list > a:hover {
-        cursor: pointer;
+    .active {
+        color: brown;
+        border: 1px solid brown;
     }
 
     .product-cart-wrapper {

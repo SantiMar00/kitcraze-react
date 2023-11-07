@@ -13,9 +13,12 @@ function Product() {
     const [kit, setKit] = useState()
     const [size, setSize] = useState('')
     const [qty, setQty] = useState(1)
+    const [clicked, setClicked] = useState()
+
+    const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
 
     useEffect(() => {
-        fetch(`https://kitcraze-api.onrender.com/kits/${id}`)
+        fetch(`${process.env.REACT_APP_BASE_URL}/${id}`)
             .then((res) => res.json())
             .then((kit) => setKit(kit))
     }, [id])
@@ -35,49 +38,24 @@ function Product() {
                         <div class="product-price">€{kit.price}</div>
                         <div class="product-size">
                             <p>{`Size: ${size}`}</p>
-                            <div class="sizes-list">
-                                <a
-                                    onClick={() => {
-                                        setSize('XS')
-                                    }}
-                                >
-                                    XS
-                                </a>
-                                <a
-                                    onClick={() => {
-                                        setSize('S')
-                                    }}
-                                >
-                                    S
-                                </a>
-                                <a
-                                    onClick={() => {
-                                        setSize('M')
-                                    }}
-                                >
-                                    M
-                                </a>
-                                <a
-                                    onClick={() => {
-                                        setSize('L')
-                                    }}
-                                >
-                                    L
-                                </a>
-                                <a
-                                    onClick={() => {
-                                        setSize('XL')
-                                    }}
-                                >
-                                    XL
-                                </a>
-                                <a
-                                    onClick={() => {
-                                        setSize('XXL')
-                                    }}
-                                >
-                                    XXL
-                                </a>
+                            <div className="sizes-list">
+                                {sizes.map((size, index) => (
+                                    <a
+                                        key={index}
+                                        name={size}
+                                        onClick={() => {
+                                            setSize(size)
+                                            setClicked(index)
+                                        }}
+                                        className={
+                                            index === clicked
+                                                ? 'size-btn active'
+                                                : 'size-btn'
+                                        }
+                                    >
+                                        {size}
+                                    </a>
+                                ))}
                             </div>
                         </div>
                         <div class="product-cart-wrapper">

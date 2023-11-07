@@ -10,7 +10,7 @@ function Landing() {
     const [kits, setKits] = useState([])
 
     useEffect(() => {
-        fetch('https://kitcraze-api.onrender.com/kits')
+        fetch(process.env.REACT_APP_BASE_URL)
             .then((res) => res.json())
             .then((data) => {
                 setKits(data)

@@ -12,11 +12,13 @@ function KitCard({ kit }) {
         <div>
             <a href={`/${productURL}/${id}`} class="kit-card">
                 <img class="card-img" src={imgURL} />
-                <p className="card-details ">
-                    {season} {team} {type}
-                </p>
+                <div class="card-details">
+                    <p className="card-kit-name">
+                        {season} {team} {type}
+                    </p>
 
-                <p class="card-price">{`€${price}`}</p>
+                    <p class="card-price">{`€${price}`}</p>
+                </div>
             </a>
         </div>
     )
