@@ -13,9 +13,16 @@
         padding: 0 25px;
     }
 
+    .products-page-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        margin: 50px 0px;
+    }
+
     .products-title {
         font-family: 'Bebas Neue';
-        margin: 50px 0px;
     }
 
     .grid-wrapper {
