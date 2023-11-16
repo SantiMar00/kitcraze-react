@@ -4,6 +4,7 @@ import { CartContext } from '../../../context/CartProvider'
 import Header from '../../../components/header/Header'
 import './Product.css'
 import Footer from '../../../components/footer/Footer'
+import Placeholder from '../../../components/placeholder/Placeholder'
 
 function Product() {
     const { product, id } = useParams()
@@ -89,17 +90,7 @@ function Product() {
             </div>
         )
     } else {
-        return (
-            <div
-                style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}
-            >
-                <h1>Loading...</h1>
-            </div>
-        )
+        return <Placeholder />
     }
 }
 
