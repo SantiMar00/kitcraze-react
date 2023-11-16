@@ -77,11 +77,6 @@ function Header() {
                             POPULAR
                         </a>
                     </li>
-                    <li>
-                        <a href="/national-teams" class="li-a">
-                            NATIONAL TEAMS
-                        </a>
-                    </li>
 
                     <li className="search-icon-box-wrapper">
                         <input

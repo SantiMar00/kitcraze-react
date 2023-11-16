@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom'
 import './Products.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -8,14 +8,13 @@ import Placeholder from '../../components/placeholder/Placeholder'
 function Products() {
     const { url } = useParams(null)
     const [kits, setKits] = useState([])
-    const [currentPage, setCurrentPage] = useState(1)
     const [loading, setLoading] = useState(true)
 
     const [searchParams] = useSearchParams()
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (url === '2023-2024') {
-            console.log('pepe')
             fetch(`${process.env.REACT_APP_BASE_URL}?season=2023-2024`)
                 .then((res) => res.json())
                 .then((data) => {
@@ -39,7 +38,15 @@ function Products() {
                     setLoading(false)
                     window.scrollTo(0, 0)
                 })
-        } else {
+        } else if (url === 'popular') {
+            fetch(`${process.env.REACT_APP_BASE_URL}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    setKits(data)
+                    setLoading(false)
+                    window.scrollTo(0, 0)
+                })
+        } else if (url === 'search') {
             fetch(
                 `${process.env.REACT_APP_BASE_URL}?q=${searchParams.get('q')}`
             )
@@ -49,8 +56,10 @@ function Products() {
                     setLoading(false)
                     window.scrollTo(0, 0)
                 })
+        } else {
+            navigate('/')
         }
-    }, [currentPage, searchParams])
+    }, [searchParams])
 
     return (
         <div>
@@ -98,15 +107,6 @@ function Products() {
                             ))}
                         </div>
                     </div>
-                    {/* <div>
-                        <button onClick={() => setCurrentPage(currentPage - 1)}>
-                            <p> {'<'} </p>
-                        </button>
-                        <p> {currentPage} </p>
-                        <button onClick={() => setCurrentPage(currentPage + 1)}>
-                            <p> {'>'} </p>
-                        </button>
-                    </div> */}
                 </div>
             )}
             <Footer />

@@ -17,6 +17,14 @@ function Product() {
 
     const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
 
+    const addItemCartHandle = () => {
+        if (size) {
+            addToCart(kit, size, qty)
+        } else {
+            alert('Please select size before adding to cart.')
+        }
+    }
+
     useEffect(() => {
         fetch(`${process.env.REACT_APP_BASE_URL}/${id}`)
             .then((res) => res.json())
@@ -70,7 +78,7 @@ function Product() {
                             />
                             <button
                                 class="add-to-cart-btn"
-                                onClick={() => addToCart(kit, size, qty)}
+                                onClick={() => addItemCartHandle()}
                             >
                                 ADD TO CART
                             </button>
