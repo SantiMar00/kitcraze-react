@@ -142,9 +142,6 @@ function Header() {
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <p>-</p>
-                    </li>
                 </ul>
             </div>
             {isCartShown && (
